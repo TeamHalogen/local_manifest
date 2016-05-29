@@ -2,9 +2,6 @@
 <manifest>
     
     <!-- Remotes -->
-    <remote name="TeamHalogen"
-            fetch="https://github.com/TeamHalogen/" />
-    
     <remote name="UBERTC"
             fetch="https://bitbucket.org/UBERTC/"
             revision="refs/heads/master" />
