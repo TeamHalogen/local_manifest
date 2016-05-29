@@ -43,8 +43,4 @@
         <copyfile dest="Makefile" src="core/root.mk"/>
     </project>
     
-    <!-- Benschhold's kernel -->
-    <remove-project name="halogenOS/android_kernel_oneplus_msm8994" />
-    <project name="benschhold/android_kernel_oneplus_msm8994_custom" path="kernel/oneplus/msm8994" remote="github" revision="master" />
-    
 </manifest>
