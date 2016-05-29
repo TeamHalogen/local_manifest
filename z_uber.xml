@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+
+    <remote
+        name="UBERTC"
+        fetch="https://bitbucket.org/UBERTC/"
+        revision="refs/heads/master" />
+    
+    <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+    <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+    <remove-project name="halogenOS/android_kernel_oneplus_msm8994" />
+    <remove-project name="android_build" />
+    
+    <!-- Toolchain -->
+    <project 
+                groups  ="pdk,linux,arm" 
+                name    =                                "aarch64-linux-android-4.9"
+                path    ="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+                remote  ="UBERTC" />
+    <project
+                groups  ="pdk,linux,arm"
+                name    =                            "arm-eabi-4.9"
+                path    ="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9"
+                remote  ="UBERTC" />
+    <project
+                groups  ="pdk,linux,arm"
+                name    =                            "arm-linux-androideabi-4.9"
+                path    ="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"
+                remote  ="UBERTC" />
+    <project
+                groups  ="pdk,linux,arm"
+                name    =                                "aarch64-linux-android-4.9-kernel"
+                path    ="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel"
+                remote  ="UBERTC" />
+    
+    <project
+                groups  ="pdk,linux,arm"
+                name    ="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+                path    =         "prebuilts/gcc/linux-x86/aarch64/ggl-gcc-aarch64-linux-android-4.9"
+                remote  ="caf"    />
+    
+    <project groups="pdk" name="android_build" path="build" remote="XOS" revision="refs/heads/XOS-6.0-uber">
+        <copyfile dest="Makefile" src="core/root.mk"/>
+    </project>
+    
+    <!-- Benschhold's kernel -->
+    <project name="benschhold/android_kernel_oneplus_msm8994_custom" path="kernel/oneplus/msm8994" remote="github" revision="master" />
+    
+</manifest>
