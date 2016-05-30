@@ -11,7 +11,7 @@
     <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
     <project groups  ="pdk,linux,arm" 
              name    ="aarch64-linux-android-4.9"
-             path    ="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+             path    ="prebuilts/gcc/linux-x86/aarch64/uber-rom-gcc-4.9"
              remote  ="UBERTC" />
 
     <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
@@ -25,15 +25,10 @@
              name    ="arm-linux-androideabi-4.9"
              path    ="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"
              remote  ="UBERTC" />
-                
-    <project groups  ="pdk,linux,arm"
-             name    ="aarch64-linux-android-4.9-kernel"
-             path    ="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9-kernel"
-             remote  ="UBERTC" />
     
     <project groups  ="pdk,linux,arm"
              name    ="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
-             path    ="prebuilts/gcc/linux-x86/aarch64/ggl-gcc-aarch64-linux-android-4.9"
+             path    ="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
              remote  ="caf" />
     
     
