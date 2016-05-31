@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+
+    <!-- Benschhold's kernel -->
+    <remove-project name="halogenOS/android_kernel_oneplus_msm8994" />
+    <project name="benschhold/android_kernel_oneplus_msm8994_custom" path="kernel/oneplus/msm8994" remote="github" revision="master" />
+    
+    <!-- Necessary stuff from vendor for bensch kernel (NEEDS TO BE UPDATED FREQUENTLY BY SOMEONE) -->
+    <remove-project name="halogenOS/android_vendor_xos" />
+    <project name="TeamHalogen/android_vendor_xos" path="vendor/xos" remote="github" revision="XOS-6.0-bensch" />
+    
+</manifest>
