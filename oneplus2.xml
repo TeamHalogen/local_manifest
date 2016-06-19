@@ -34,7 +34,7 @@
     
     <!-- Build System -->
     <remove-project name="android_build" />    
-    <project groups="pdk" name="android_build" path="build" remote="TeamHalogen" revision="XOS-6.0-uber">
+    <project groups="pdk" name="android_build-uber" path="build" remote="TeamHalogen" revision="XOS-6.0-uber">
         <copyfile dest="Makefile" src="core/root.mk"/>
     </project>
     
