@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    
+    <!-- Remotes -->
+    <remote name="UBERTC"
+            fetch="https://bitbucket.org/UBERTC/"
+            revision="refs/heads/master" />
+    
+
+    <!-- Uber Toolchain -->
+    <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+    <project groups  ="pdk,linux,arm" 
+             name    ="aarch64-linux-android-4.9"
+             path    ="prebuilts/gcc/linux-x86/aarch64/uber-rom-gcc-4.9"
+             remote  ="UBERTC" />
+
+    <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+    <project groups  ="pdk,linux,arm"
+             name    ="arm-eabi-4.9"
+             path    ="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9"
+             remote  ="UBERTC" />
+                
+    <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+    <project groups  ="pdk,linux,arm"
+             name    ="arm-linux-androideabi-4.9"
+             path    ="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"
+             remote  ="UBERTC" />
+    
+    <project groups  ="pdk,linux,arm"
+             name    ="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+             path    ="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"
+             remote  ="caf" />
+    
+    
+    <!-- Build System 
+    <remove-project name="android_build" />    
+    <project groups="pdk" name="android_build" path="build" remote="TeamHalogen" revision="XOS-6.0-uber">
+        <copyfile dest="Makefile" src="core/root.mk"/>
+    </project> -->
+    
+</manifest>
